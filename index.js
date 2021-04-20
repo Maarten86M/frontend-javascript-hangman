@@ -9,6 +9,7 @@ function game(word, guesses) {
   // voeg de geraden letter toe aan de array met guesses
   guesses.push(letter);
 
+  // game loops , nog exit .
   // volgende ronde! we roepen game nog een keer aan
   game(word, guesses);
 }
@@ -22,5 +23,9 @@ __________
 |            ╚██████╔╝██║░░██║███████╗╚██████╔╝╚█████╔╝███████╗
 ===========  ░╚═════╝░╚═╝░░╚═╝╚══════╝░╚═════╝░░╚════╝░╚══════╝
 `);
+// game funtie wordt aangeroepen.
+// argument 1 string
+// argument 2 leeg array
+// daarna gaat hij weer terug naar 9
 
 game("javascript", []);
